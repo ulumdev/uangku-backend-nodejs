@@ -23,7 +23,14 @@ app.get("/", (req, res) => {
 });
 
 const authRoutes = require("./routes/auth");
+const categoryRoutes = require("./routes/category");
+const transactionRoutes = require("./routes/transaction");
+const summaryRoutes = require("./routes/summary");
+
 app.use("/api/auth", authRoutes);
+app.use("/api/categories", categoryRoutes);
+app.use("/api/transactions", transactionRoutes);
+app.use("/api/summary", summaryRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);

@@ -1,6 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
-const Category = require("../models/category"); // Assuming Category model is in the same directory
+const Category = require("./Category"); // Assuming Category model is in the same directory
 
 const Transaction = sequelize.define(
   "Transaction",

@@ -1,0 +1,15 @@
+{
+    "development": {
+      "username": "root",
+      "password": "pwd123",
+      "database": "uangku_backend-nodejs",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "test": {
+        
+    },
+    "production": {
+    
+    }
+  }
